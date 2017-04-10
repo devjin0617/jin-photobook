@@ -1,23 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+
+    <!--<img src="./assets/logo.png">-->
+    <jp-navi-bar></jp-navi-bar>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import JPNaviBar from './layouts/JPNaviBar'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    'jp-navi-bar': JPNaviBar
+  }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import './assets/styles/base.scss'
 </style>
