@@ -2,7 +2,7 @@
 
   <el-menu theme="dark"
            :default-active="activeIndex"
-           class="el-menu-demo"
+           class="el-menu"
            mode="horizontal"
            @select="handleSelect">
     <el-menu-item index="1">Processing Center</el-menu-item>
@@ -34,3 +34,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.el-menu {
+  border-radius:0;
+}
+</style>
