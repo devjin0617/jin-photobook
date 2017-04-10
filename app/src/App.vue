@@ -3,7 +3,7 @@
 
     <!--<img src="./assets/logo.png">-->
     <jp-navi-bar></jp-navi-bar>
-    <div>
+    <div class="container">
       <el-row type="flex" justify="space-between">
         <jp-side-bar></jp-side-bar>
         <el-col :xs="14" :sm="18" :md="20" :lg="21">
@@ -31,5 +31,17 @@ export default {
 </script>
 
 <style lang="scss">
-@import './assets/styles/base.scss'
+@import './assets/styles/base.scss';
+#app {
+  height: 100vh;
+}
+.container {
+  height:100%;
+
+  .el-row {
+    height:100%;
+    padding-top:60px;
+  }
+}
+
 </style>
