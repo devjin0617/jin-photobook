@@ -34,6 +34,7 @@ export default {
 @import './assets/styles/base.scss';
 #app {
   height: 100vh;
+  min-width:600px;
 }
 .container {
   height:100%;
